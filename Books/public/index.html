@@ -3,46 +3,41 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
   </head>
   <body>
-    <div>
-      <table>
-        <tr>
-          <td>Name:</td> 
-          <td><input type="text" ng-model="Name"></td>
-        </tr>
-        <tr>
-          <td>Isbn:</td>
-          <td><input type="text" ng-model="Isbn"></td>
-        </tr>
-        <tr>
-          <td>Author:</td> 
-          <td><input type="text" ng-model="Author"></td>
-        </tr>
-        <tr>
-          <td>Pages:</td>
-          <td><input type="number" ng-model="Pages"></td>
-        </tr>
-      </table>
-      <button ng-click="add_book()">Add</button>
-    </div>
-    <hr>
-    <div>
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Isbn</th>
-          <th>Author</th>
-          <th>Pages</th>
-        </tr>
-        <tr ng-repeat="book in books">
-          <td><input type="button" value="Delete" data-ng-click="del_book(book)"></td>
-          <td>{{book.name}}</td>
-          <td>{{book.isbn}}</td>
-          <td>{{book.author}}</td>
-          <td>{{book.pages}}</td>
-        </tr>
-      </table>
+    <div class="Container">
+      <div class="Banner box" >
+        Banner
+      </div>
+
+      <div class="Navigation box">
+        <div class="NavMenu box">
+          Nav
+        </div>
+        <div class="NavSearch box">
+          Search
+        </div>
+      </div>
+
+      <div class="PageContent box">
+        <div class="MainSection box">
+          Main
+        </div>
+        <div class="Sidebar box">
+          <div class="FavoriteTags box">
+            Tags
+          </div>
+          <div class="History box">
+            History
+          </div>
+        </div>
+      </div>
+
+      <div class="Footer box">
+          Footer
+      </div>
+
     </div>
   </body>
 </html>
