@@ -7,11 +7,11 @@
   </head>
   <body>
     <div class="Container">
-      <div class="Banner box" >
-        Banne asd r
+      <div class="Banner box mainSection" >
+        Banner
       </div>
 
-      <div class="Navigation box">
+      <div class="Navigation box mainSection">
         <div class="NavMenu box">
           Nav
         </div>
@@ -19,10 +19,31 @@
           Search
         </div>
       </div>
+      <hr>
 
-      <div class="PageContent box">
+      <div class="PageContent box mainSection">
         <div class="MainSection box">
-          Main
+
+          <table>
+            <tr>
+              <td>Name:</td> 
+              <td><input type="text" ng-model="Name"></td>
+            </tr>
+            <tr>
+              <td>Isbn:</td>
+              <td><input type="text" ng-model="Isbn"></td>
+            </tr>
+            <tr>
+              <td>Author:</td> 
+              <td><input type="text" ng-model="Author"></td>
+            </tr>
+            <tr>
+              <td>Pages:</td>
+              <td><input type="number" ng-model="Pages"></td>
+            </tr>
+          </table>
+
+          <button ng-click="add_book()">Add Article</button>
         </div>
         <div class="Sidebar box">
           <div class="FavoriteTags box">
@@ -34,7 +55,7 @@
         </div>
       </div>
 
-      <div class="Footer box">
+      <div class="Footer box mainSection">
           Footer
       </div>
 
